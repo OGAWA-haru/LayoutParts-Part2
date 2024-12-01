@@ -1,1 +1,32 @@
 @charset "UTF-8";
+
+.square {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 5px solid #8f5a0a;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 500px;
+  background: #fad296;
+}
+
+.square:before {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 10%;
+  border: 12px solid transparent;
+  border-top: 12px solid #fad296;
+  z-index: 2;
+}
+
+.square:after {
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  left: 9.5%;
+  border: 14px solid transparent;
+  border-top: 15px solid #8f5a0a;
+  z-index: 1;
+}
