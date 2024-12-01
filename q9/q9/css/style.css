@@ -2,3 +2,81 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+.green-box {
+  width: 200px;
+  height: 200px;
+  background: #76ff826b;
+  margin: 0 auto;
+}
+
+.fadein {
+  animation: fadein 4s ease 0s 1 normal;
+}
+
+.fadeout {
+  animation: fadeout 4s ease 4s 1 normal;
+}
+
+.spin {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes fadein {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes fadeout {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+.blue-box {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.color-pink:hover {
+  background: #ff27e2c9;
+}
+
+.spin-360:hover {
+  transform: rotate(360deg);
+}
+
+.top-20-move:hover {
+  transform: translate(0,-20%);
+}
+
+.right-20-move:hover {
+  transform: translate(50%,0);
+}
+
+.height-300:hover {
+  height: 300px;
+}
+
+.width-500:hover {
+  width: 500px;
+}
+
+.border:hover {
+  border: 10px #00ffe5 solid;
+}
+
+.border {
+  box-sizing:border-box
+}
+
+.shadow:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
