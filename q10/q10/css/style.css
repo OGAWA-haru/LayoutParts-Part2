@@ -1,1 +1,109 @@
 @charset "UTF-8";
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  text-align: center;
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:not(:first-child) {
+  margin-left: 30px;
+}
+
+.red-box {
+  background: #fd0f0fd9;
+  color: #fff;
+}
+
+.blue-box {
+  background: #170ffdd9;
+  color: #fff;
+}
+
+.green-box {
+  background: #0ffd0fd9;
+  color: #000;
+}
+
+.red-box-shadow {
+  background: #fd0f0fd9;
+  color: #fff;
+  box-shadow: 0 5px 0 rgba(63, 5, 5, 0.851);
+}
+
+.blue-box-shadow {
+  background: #170ffdd9;
+  color: #fff;
+  box-shadow: 0 5px 0 rgba(5, 13, 63, 0.851);
+}
+
+.green-box-shadow {
+  background: #0ffd0fd9;
+  color: #000;
+  box-shadow: 0 5px 0 rgba(5, 63, 5, 0.851);
+}
+
+.red-box-tap {
+  background: #fd0f0fd9;
+  color: #fff;
+  box-shadow: 0 5px 0 rgba(63, 5, 5, 0.851);
+}
+
+.blue-box-tap {
+  background: #170ffdd9;
+  color: #fff;
+  box-shadow: 0 5px 0 rgba(5, 13, 63, 0.851);
+}
+
+.green-box-tap {
+  background: #0ffd0fd9;
+  color: #000;
+  box-shadow: 0 5px 0 rgba(5, 63, 5, 0.851);
+}
+
+.red-box-tap:active,.blue-box-tap:active,.green-box-tap:active {
+  box-shadow: none;
+  position: relative;
+  top:2px
+}
+
+.double-line {
+  color: #67c5ff;
+  border: 4px double #67c5ff;
+  transition: 0.5s;
+}
+
+.double-line:hover {
+  background: #fffbef;
+}
+
+.dot-line {
+  color: #67c5ff;
+  border: 4px dotted #75caff;
+  transition: 0.5s;
+}
+
+/*カーソルを当てた時がないためborder部分の変化を実装*/
+.dot-line:hover {
+  border: 4px solid ;
+}
+
+.line {
+  color: #0079a5f8;
+  background: #d0edfff8;
+  border: 4px dashed #67c5ff;
+  transition: 0.5s;
+}
+
+.line:hover {
+  color: #67c5ff;
+  background: #ffffff;
+}
